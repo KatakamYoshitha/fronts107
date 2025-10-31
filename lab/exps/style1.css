@@ -1,0 +1,61 @@
+/* Make the page look nice and remove default spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header at the top */
+header {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation links in header */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Change link style when hovered */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background-color: #fff8e1;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Featured products section */
+#featured {
+    background-color: #fff2cc;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Images for products */
+.slideshow img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* About section */
+#about {
+    background-color: #fff8e1;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Footer at the bottom */
+footer {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
