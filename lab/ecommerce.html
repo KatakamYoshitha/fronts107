@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-commerce</title>
+</head>
+<body>
+    <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "left main right"
+        "footer footer footer";
+      grid-template-columns: 20% 1fr 20%;
+      grid-template-rows: 80px 1fr 60px;
+      height: 100vh;
+    }
+
+header {
+      grid-area: header;
+      background-color: #74adcb;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+nav {
+      grid-area: left;
+      background-color: #e0ece2;
+      padding: 15px;
+    }
+
+    main {
+      grid-area: main;
+      padding: 20px;
+      background-color: #fdfdfd;
+    }
+
+    aside {
+      grid-area: right;
+      background-color: #dbddd7;
+      padding: 15px;
+    }
+
+
+footer {
+      grid-area: footer;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+    }
+    </style>
+    <div class="container">
+        <header>
+            <h1> 🛒E-shop - Best Deals Everyday</h1>
+        </header>
+        <nav>
+            <h3>Categories</h3>
+            <ul>
+                <li>Men's wear</li>
+                <li>Women's wear</li>
+                <li>Kids' wear</li>
+                <li>Accessories</li>
+                <li>Footwear</li>
+            </ul>
+        </nav>
+        <main>
+            <h3>Featured Products</h3>
+            <ul>
+                <li>📱Smartphone - ₹29,999</li>
+                <li>👕Tshirt - ₹599</li>
+                <li>👖Jeans - ₹299</li>
+            </ul>
+        </main>
+        <aside>
+            <h3>Cart</h3>
+            <p>Your cart is currently empty.</p>
+            <h3>Offers 🔥</h3>
+            <ul>
+                <li>Flat 10% off on first purchase</li>
+                <li>Buy 1 Get 1 Free on select items</li>
+            </ul>
+        </aside>
+        <footer>
+            <p>© 2025 E-shop. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

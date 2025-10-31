@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to JavaScript</h1>
+    <p id="demo">Original text</p>
+    <button onclick="document.getElementById('demo').innerText = 'Action changed';">Change Text
+    </button>
+    <p id="text">This text will turn red</p>
+    <button onclick="document.getElementById('text').style.color = 'red';">Make red</button><br><br>
+    <div id="box" style="width: 100px; height: 100px; background-color: rgb(107, 183, 216);"></div><br>
+    <button onclick="document.getElementById('box').style.display='none';">Hide</button>
+    <button onclick="document.getElementById('box').style.display='block';">Show</button><br><br>
+    <input type="text" id="inputText" placeholder="Enter your name">
+    <button onclick="alert('Good Morning, '+document.getElementById('inputText').value);">Greet Me</button><br><br>
+    <img id="myImage" src="klu.jpg" width="200">
+<button onclick="document.getElementById('myImage').src='w3schools.jpg';">
+    Change Image
+</button>
+<br><br>
+<p id="multiChange">Watch me change!</p>
+<button onclick="
+    let el = document.getElementById('multiChange');
+    el.style.color = 'red';
+    el.style.fontSize = '24px';
+    el.innerHTML = 'Updated!';
+">
+    Change Everything
+</button>
+
+<br><br>
+<input type="text" id="email" placeholder="Enter email">
+<button onclick="
+    let email = document.getElementById('email').value;
+    if(email.includes('@')) {
+        alert('Valid Email');
+    } else {
+        alert('Invalid Email');
+    }">
+    Check Email
+</button><br><br>
+<img id="Image" src="Screenshot 2025-08-18 115906.png" width="200"><br>
+<button onclick="document.getElementById('Image').src='Screenshot 2025-08-18 115906.png';">
+    OFF
+</button>
+<button onclick="document.getElementById('Image').src='Screenshot 2025-08-18 115918.png';">
+    ON
+</button>
+</body>
+</html>
